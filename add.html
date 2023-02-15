@@ -7,55 +7,60 @@
     <title>Students - Add</title>
     <link
       rel="stylesheet"
-      href="node_modules/bootstrap/dist/css/bootstrap.css"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
   </head>
-  <body class="container">
-    <script src="menu.js"></script>
-    <br />
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col">
-          <h3>Add Student</h3>
+  <body>
+    <form>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <script src="menu.js"></script>
+          </div>
+        </div>
+        <div class="row px-4 pt-4">
+          <div class="col">
+            <h5>Add Student</h5>
+          </div>
+        </div>
+        <div class="row px-4">
+          <div class="col">
+            <div class="row">
+              <div class="col-sm-6">
+                <label for="firstName" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="firstName" />
+              </div>
+              <div class="col-sm-6">
+                <label for="lastName" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="lastName" />
+              </div>
+              <div class="col-sm-6">
+                <label for="city" class="form-label">City</label>
+                <input type="text" class="form-control" id="city" />
+              </div>
+              <div class="col-sm-6">
+                <label for="state" class="form-label">State</label>
+                <input type="text" class="form-control" id="state" />
+              </div>
+              <div class="col-12">
+                <label for="Email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="Email"
+                  placeholder="1234 Main St"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row p-4">
+          <div class="col">
+            <button type="submit" class="btn">Add</button>
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col">
-          <form class="row">
-            <div class="col-md-6">
-              <label for="firstName" class="form-label">First Name</label>
-              <input type="text" class="form-control" id="firstName" />
-            </div>
-            <div class="col-md-6">
-              <label for="lastName" class="form-label">Last Name</label>
-              <input type="text" class="form-control" id="lastName" />
-            </div>
-            <div class="col-md-6">
-              <label for="city" class="form-label">City</label>
-              <input type="text" class="form-control" id="city" />
-            </div>
-            <div class="col-md-6">
-              <label for="state" class="form-label">State</label>
-              <input type="text" class="form-control" id="state" />
-            </div>
-            <div class="col-12">
-              <label for="Email" class="form-label">Email</label>
-              <input
-                type="email"
-                class="form-control"
-                id="Email"
-                placeholder="1234 Main St"
-              />
-            </div>
-            <div class="col-12">
-              <br />
-              <button type="submit" class="btn btn-dark">Submit</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-
+    </form>
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
   </body>
